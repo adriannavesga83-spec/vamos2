@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -23,66 +22,74 @@ body{
     justify-content:center;
     align-items:center;
     padding:20px;
-    background:linear-gradient(135deg,#111111,#1d1d1d);
+    background:#000;
+    color:#fff;
 }
 
+/* tarjeta elegante */
 .container{
     width:100%;
     max-width:500px;
-    background:#ffffff;
-    border-radius:24px;
+    background:rgba(18,18,18,0.9);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:22px;
     padding:35px 25px;
     text-align:center;
-    box-shadow:0 15px 40px rgba(0,0,0,.25);
+    box-shadow:0 20px 60px rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
 }
 
 .logo{
-    width:160px;
-    max-width:100%;
+    width:150px;
     margin-bottom:20px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.6));
 }
 
 h1{
-    color:#111;
+    color:#fff;
     font-size:2rem;
     font-weight:800;
-    margin-bottom:20px;
+    margin-bottom:18px;
+    letter-spacing:1px;
 }
 
 .texto{
-    color:#222;
-    font-size:1.15rem;
+    color:#e6e6e6;
+    font-size:1.1rem;
     line-height:1.8;
-    margin-bottom:30px;
-    font-weight:600;
+    margin-bottom:28px;
+    font-weight:500;
 }
 
+/* botón elegante */
 .btn{
     display:block;
     width:100%;
     text-decoration:none;
     padding:18px;
     border-radius:14px;
-    background:linear-gradient(90deg,#ff3b30,#ff6a00);
+    background:linear-gradient(90deg,#ff2d2d,#ff6a00);
     color:white;
     font-size:1rem;
     font-weight:800;
     transition:.3s;
-    box-shadow:0 10px 25px rgba(255,59,48,.35);
+    box-shadow:0 10px 30px rgba(255,60,0,0.25);
 }
 
 .btn:hover{
-    transform:translateY(-2px);
+    transform:translateY(-3px);
+    box-shadow:0 15px 40px rgba(255,60,0,0.35);
 }
 
+/* móvil */
 @media(max-width:480px){
 
     .container{
-        padding:30px 20px;
+        padding:28px 18px;
     }
 
     h1{
-        font-size:1.8rem;
+        font-size:1.7rem;
     }
 
     .texto{
@@ -96,6 +103,7 @@ h1{
 
 </style>
 </head>
+
 <body>
 
 <div class="container">
@@ -105,15 +113,14 @@ h1{
     <h1>ANTRAX OFICIAL</h1>
 
     <div class="texto">
-        Te enseño a ganar 2 palos diarios con tu NEQUI, para ver toda la información del negocio, únete a mi grupo de TELEGRAM, con el botón de ABAJO 👇
+        Te enseño a ganar 2 palos diarios con tu NEQUI, para ver toda la información del negocio, únete a mi grupo de TELEGRAM con el botón de abajo 👇
     </div>
 
-    <a href="https://t.me/+wOkDvhJV8INjYzNh" class="btn" target="_blank">
-        👉 UNETE AL GRUPO 👈
+    <a href="https://t.me/+wOkDvhJV8INjYzNh" target="_blank" class="btn">
+        👉 UNIRME AL GRUPO
     </a>
 
 </div>
 
 </body>
 </html>
-```
