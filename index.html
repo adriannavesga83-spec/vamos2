@@ -17,51 +17,50 @@
 }
 
 body{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
     background:#000;
     color:#fff;
+    padding:20px;
 }
 
-/* tarjeta elegante */
+/* CONTENEDOR RESPONSIVE REAL */
+.wrapper{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
 .container{
     width:100%;
-    max-width:500px;
-    background:rgba(18,18,18,0.9);
+    max-width:480px;
+    background:rgba(18,18,18,0.95);
     border:1px solid rgba(255,255,255,0.08);
     border-radius:22px;
-    padding:35px 25px;
+    padding:30px 20px;
     text-align:center;
     box-shadow:0 20px 60px rgba(0,0,0,0.6);
-    backdrop-filter: blur(10px);
 }
 
 .logo{
-    width:150px;
-    margin-bottom:20px;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.6));
+    width:140px;
+    margin-bottom:18px;
 }
 
 h1{
-    color:#fff;
-    font-size:2rem;
+    font-size:1.8rem;
     font-weight:800;
-    margin-bottom:18px;
+    margin-bottom:16px;
     letter-spacing:1px;
 }
 
 .texto{
     color:#e6e6e6;
-    font-size:1.1rem;
-    line-height:1.8;
-    margin-bottom:28px;
+    font-size:1rem;
+    line-height:1.7;
+    margin-bottom:25px;
     font-weight:500;
 }
 
-/* botón elegante */
 .btn{
     display:block;
     width:100%;
@@ -72,32 +71,30 @@ h1{
     color:white;
     font-size:1rem;
     font-weight:800;
-    transition:.3s;
-    box-shadow:0 10px 30px rgba(255,60,0,0.25);
+    transition:.2s;
 }
 
-.btn:hover{
-    transform:translateY(-3px);
-    box-shadow:0 15px 40px rgba(255,60,0,0.35);
+.btn:active{
+    transform:scale(0.98);
 }
 
-/* móvil */
-@media(max-width:480px){
+/* ajuste extra para pantallas muy pequeñas */
+@media(max-width:380px){
 
     .container{
-        padding:28px 18px;
+        padding:25px 15px;
     }
 
     h1{
-        font-size:1.7rem;
+        font-size:1.6rem;
     }
 
     .texto{
-        font-size:1rem;
+        font-size:0.95rem;
     }
 
     .logo{
-        width:130px;
+        width:120px;
     }
 }
 
@@ -106,19 +103,23 @@ h1{
 
 <body>
 
+<div class="wrapper">
+
 <div class="container">
 
-    <img src="https://i.ibb.co/B51dNgRG/ANTRAX.png" alt="ANTRAX" class="logo">
+    <img src="https://i.ibb.co/B51dNgRG/ANTRAX.png" class="logo">
 
     <h1>ANTRAX OFICIAL</h1>
 
     <div class="texto">
-        Te enseño a ganar 2 palos diarios con tu NEQUI, para ver toda la información del negocio, únete a mi grupo de TELEGRAM con el botón de abajo 👇
+        Te enseño a ganar 2 palos diarios con tu NEQUI, para ver toda la información del negocio, únete al grupo de TELEGRAM con el botón de abajo 👇
     </div>
 
     <a href="https://t.me/+wOkDvhJV8INjYzNh" target="_blank" class="btn">
         👉 UNIRME AL GRUPO
     </a>
+
+</div>
 
 </div>
 
